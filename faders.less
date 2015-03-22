@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*!
+faders.css
+licensed under the MIT license - http://opensource.org/licenses/MIT
+copyright (c) 2015 tom anyz
+*/
+
+@time : 1.5s;
+@start-position : 30px;
+@end-position : 0;
+
+.fadeFromLeft, .fadeFromRight, .fadeFromTop , .fadeFromBottom , .fadeFromTransparent
+{
+	opacity: 0;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-transition:all ease @time;
+	transition:all ease @time;
+}
+
+.fadeFromLeft
+{
+	-webkit-transform: translateX(@start-position * -1);
+	transform: translateX(@start-position * -1);
+}
+
+.fadeFromRight 
+{
+	-webkit-transform: translateX(@start-position);
+	transform: translateX(@start-position);
+}
+
+.fadeFromTop
+{
+	-webkit-transform: translateY(@start-position * -1);
+	transform: translateY(@start-position * -1);
+} 
+
+.fadeFromBottom
+{
+	-webkit-transform: translateY(@start-position);
+	transform: translateY(@start-position);
+}	
+
+.fadeFromLeft.animation-end , .fadeFromRight.animation-end , .fadeFromTop.animation-end , .fadeFromBottom.animation-end, .fadeFromTransparent.animation-end
+{
+	opacity: 1;
+	-webkit-transform: translateX(@end-position);
+	transform: translateX(@end-position);
+	-webkit-transform: translateY(@end-position);
+	transform: translateY(@end-position);
+}

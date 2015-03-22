@@ -1,0 +1,14 @@
+{
+  "name": "faders.css",
+  "version": "3.2.5",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.8.0",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "load-grunt-tasks": "~0.2.0"
+  },
+  "spm": {
+    "main": "./faders.css"
+  }
+}

@@ -1,0 +1,5 @@
+@charset "UTF-8";/*!
+faders.css
+licensed under the MIT license - http://opensource.org/licenses/MIT
+copyright (c) 2015 tom anyz
+*/.fadeFromBottom,.fadeFromLeft,.fadeFromRight,.fadeFromTop,.fadeFromTransparent{opacity:0;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-transition:all ease 1.5s;transition:all ease 1.5s}.fadeFromLeft{-webkit-transform:translateX(-30px);transform:translateX(-30px)}.fadeFromRight{-webkit-transform:translateX(30px);transform:translateX(30px)}.fadeFromTop{-webkit-transform:translateY(-30px);transform:translateY(-30px)}.fadeFromBottom{-webkit-transform:translateY(30px);transform:translateY(30px)}.fadeFromBottom.animation-end,.fadeFromLeft.animation-end,.fadeFromRight.animation-end,.fadeFromTop.animation-end,.fadeFromTransparent.animation-end{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}
